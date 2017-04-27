@@ -15,6 +15,7 @@
  /* Hero image header */
  .image-bg h1 {
  	/*color: #70d651;*/
+ 	color: white;
  	font-family: Thyssen J, sans-serif;
  	font-size: 10rem;
  }
@@ -24,6 +25,7 @@
  	font-family: Thyssen J, sans-serif;
  }
 
+ /* Band logo font */
  /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
  @font-face {
  	font-family: "Thyssen J";
@@ -38,12 +40,32 @@
 
  /* Nav bar on top of page */
  .main-navigation {
- 	.module.left.site-title-container {
+ 	.site-title-container {
  		display: none;
  	}
- 	
- 	
+
+	.module-group {
+		display: block;
+
+		.module.right {
+			float: none;
+			width: 95%;
+			margin: auto;
+		}
+
+		.module {
+			display: block;
+		}
+	}
+
+
+ 	.module-group.right {
+		float: none;
+		width: 50%;
+		margin: auto;
+ 	}
  }
+ 
 
  /* Nav bar when scrolled down the page */
  .main-navigation.scrolled {
@@ -57,20 +79,9 @@
  	}
  }
 
-
-/*.module-group {
-	visibility: none;
-}
-
-.module.right.site-title-container {
-	
-	float: left;
-	display: none;
-	}*/
-
-	/* Center blog posts and other content - not working  */
-	@media (min-width: 992px) {
-		.col-md-12 {
-			float: right;
-		}
-	}
+ /* Center blog posts and other content - not working  */
+ @media (min-width: 992px) {
+ 	.col-md-12 {
+ 		float: right;
+ 	}
+ }
