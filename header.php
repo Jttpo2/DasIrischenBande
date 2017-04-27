@@ -30,14 +30,14 @@
 				<div class="container nav-bar">
 					<div class="row">
 						<div class="module left site-title-container">
-								<?php shapely_header_menu(); // main navigation ?>
+							<?php shapely_get_header_logo(); ?>
 						</div>
 						<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
 							<i class="fa fa-bars"></i>
 						</div>
 						<div class="module-group right">
-							<div class="module left">
-							<?php shapely_get_header_logo(); ?>
+							<div class="module right">
+								<?php shapely_header_menu(); // main navigation ?>
 							</div>
 							<!--end of menu module-->
 							<!-- <div class="module widget-handle search-widget-handle left hidden-xs hidden-sm">
