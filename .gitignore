@@ -1,1 +1,5 @@
+# Handled bu gulp
+style.css
+
 .DS_Store
+node_modules/
