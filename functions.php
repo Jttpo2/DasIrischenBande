@@ -12,3 +12,6 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 ?>
+
+<!-- No admin bar on top -->
+<?php show_admin_bar( false ); ?>
