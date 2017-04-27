@@ -39,18 +39,18 @@ html {
 		background-color: $background-color;
 	}
 
- 	/* Hero image header */
- 	.image-bg h1 {
- 		/*color: #70d651;*/
- 		color: white;
- 		font-family: $header-font-stack;
- 		font-size: 10rem;
- 	}
+ 	/* Hero image */
+ 	.image-bg {
+ 		h1 {
+ 			/*color: #70d651;*/
+ 			color: white;
+ 			font-family: $header-font-stack;
+ 			font-size: 10rem;
+ 		}
 
- 	/* Site title*/
- 	.site-title {
- 		font-family: $header-font-stack;
- 		color: $body-copy-color;
+ 		p {
+ 			font-size: 3rem;
+ 		}
  	}
 
  	p, .menu, h2, .entry-date {
@@ -59,6 +59,12 @@ html {
 
 	// Normal text 
 	p, .post-content .entry-content p{
+		color: $body-copy-color;
+	}
+
+	/* Site title*/
+	.site-title {
+		font-family: $header-font-stack;
 		color: $body-copy-color;
 	}
 
