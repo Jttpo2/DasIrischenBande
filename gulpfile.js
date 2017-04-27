@@ -23,8 +23,7 @@ gulp.task('changed', function() {
 }); 
 
 gulp.task('sass', function () {
-	console.log("Sass change");
-  gulp.src('./sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('.'));
+	gulp.src('./sass/**/*.scss')
+	.pipe(sass().on('error', sass.logError))
+	.pipe(gulp.dest('.'));
 });

@@ -44,25 +44,25 @@
  		display: none;
  	}
 
-	.module-group {
-		display: block;
+ 	.module-group {
+ 		display: block;
 
-		.module.right {
-			float: none;
-			width: 95%;
-			margin: auto;
-		}
+ 		.module.right {
+ 			float: none;
+ 			width: 95%;
+ 			margin: auto;
+ 		}
 
-		.module {
-			display: block;
-		}
-	}
+ 		.module {
+ 			display: block;
+ 		}
+ 	}
 
 
  	.module-group.right {
-		float: none;
-		width: 50%;
-		margin: auto;
+ 		float: none;
+ 		width: 50%;
+ 		margin: auto;
  	}
  }
  
@@ -79,9 +79,20 @@
  	}
  }
 
- /* Center blog posts and other content - not working  */
- @media (min-width: 992px) {
- 	.col-md-12 {
- 		float: right;
+ // Posts
+ .entry-header {
+ 	.shapely-category {
+		// Hide category 
+		display: none;
+	}
+}
+.post-meta-author {
+	display: none;
+}
+
+ /* Center blog posts and other content */
+ #main {
+ 	.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+ 		float: none;
  	}
  }
