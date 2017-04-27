@@ -1,0 +1,16 @@
+{
+  "name": "shapely-child",
+  "version": "0.1.0",
+  "description": "Shapely child theme for Das Irischen Bände",
+  "main": "functions.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Petersson",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^3.8.1"
+  }
+}
