@@ -201,5 +201,26 @@ html {
 		padding: 0;
 	}
 
+	// Hack-size main page posts
+	// .post.hentry {
+	// 	width: 70%;
+	// }
+
 }
 
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 992px) {
+	// Hack-size main page posts
+	.post.hentry {
+		width: 64%;
+	}
+}
+
+@media all and (max-width: 767px) {
+	// Hack-size main page posts
+	.post.hentry {
+		width: 100%;
+	}
+}

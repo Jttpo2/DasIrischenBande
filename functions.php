@@ -13,8 +13,10 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
+
+
 // No admin bar on top
-show_admin_bar( false );
+show_admin_bar( true );
 
 function get_page_header() {
 	$sitename = get_bloginfo( 'name' );
@@ -49,4 +51,7 @@ function shapely_posted_on_no_cat() {
 			</ul><?php
 		}
 		
+
+		/* Allow shortcodes in widget areas */
+		add_filter('widget_text', 'do_shortcode');
 		?>
