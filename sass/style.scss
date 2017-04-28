@@ -21,45 +21,46 @@
  $hero-image-text-color: white;
  $social-icon-color: $secondary-info-color;
  $social-icon-hover-color: #1f1f1f;
+ $link-hover-color: #0f0f0f;
  $band-name-home-font-size: 10rem;
  $band-name-page-top-font-size: 8rem;
 
 
-/* Band logo font */
-/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
-@font-face {
-	font-family: "Thyssen J";
-	src: 
-	url("fonts/thyssen_j/9THYSSEN.eot?") format("eot"),
-	url("fonts/thyssen_j/9THYSSEN.woff") format("woff"),
-	url("fonts/thyssen_j/9THYSSEN.ttf") format("truetype"),
-	url("fonts/thyssen_j/9THYSSEN.svg#Thyssen-J") format("svg");
-	font-weight: normal;
-	font-style: normal;
-}
+ /* Band logo font */
+ /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+ @font-face {
+ 	font-family: "Thyssen J";
+ 	src: 
+ 	url("fonts/thyssen_j/9THYSSEN.eot?") format("eot"),
+ 	url("fonts/thyssen_j/9THYSSEN.woff") format("woff"),
+ 	url("fonts/thyssen_j/9THYSSEN.ttf") format("truetype"),
+ 	url("fonts/thyssen_j/9THYSSEN.svg#Thyssen-J") format("svg");
+ 	font-weight: normal;
+ 	font-style: normal;
+ }
 
-html {
+ html {
 
 	// Overriding the theme background
 	body.custom-background { 
 		background-color: $background-color;
 	}
 
- 	/* Hero image */
- 	.image-bg {
- 		h1 {
- 			/*color: #70d651;*/
- 			color: $hero-image-text-color;
- 			font-family: $header-font-stack;
- 			font-size: $band-name-home-font-size;
- 		}
+	/* Hero image */
+	.image-bg {
+		h1 {
+			/*color: #70d651;*/
+			color: $hero-image-text-color;
+			font-family: $header-font-stack;
+			font-size: $band-name-home-font-size;
+		}
 
- 		p {
- 			font-size: 3rem;
- 		}
- 	}
+		p {
+			font-size: 3rem;
+		}
+	}
 
- 	.entry-content {
+	.entry-content {
 		// Band name on top of each page
 		.page-top.site-title {
 			font-size: $band-name-page-top-font-size;
@@ -163,6 +164,11 @@ html {
 		text-decoration: none;
 	}
 
+	// Link hover
+	a:hover {
+		color: #0f0f0f;
+	}
+
  	// Posts
  	.post-content {
  		//Space between
@@ -200,6 +206,18 @@ html {
 		border-top: 1px solid #ccc;
 		margin: 1em 0;
 		padding: 0;
+	}
+
+	// Post sharing section
+	.sd-title, #jp-relatedposts h3.jp-relatedposts-headline {
+		font-family: $header-font-stack;
+	}
+
+	// Related posts section
+	.shapely-next-prev {
+		a {
+			font-family: $header-font-stack;
+		}
 	}
 
 	// Contact form
