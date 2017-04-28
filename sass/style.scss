@@ -201,12 +201,21 @@ html {
 		padding: 0;
 	}
 
-	// Hack-size main page posts
-	// .post.hentry {
-	// 	width: 70%;
-	// }
+	// Contact form
+	[id^="contact-form-"] {
+		.grunion-field-label {
+			font-family: $header-font-stack;
+		}
+	}
+
+	// Mobile (hamburger) menu
+	.menu > li {
+		text-align: center;
+	}
 
 }
+
+
 
 @media screen and (min-width: 1200px) {
 }
