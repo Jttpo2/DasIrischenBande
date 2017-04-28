@@ -213,6 +213,12 @@
 		font-family: $header-font-stack;
 	}
 
+	// Post sharing buttons
+	.sd-content {
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+		filter: grayscale(100%);
+	}
+
 	// Related posts section
 	.shapely-next-prev {
 		a {
