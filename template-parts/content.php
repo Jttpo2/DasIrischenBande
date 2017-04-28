@@ -57,11 +57,12 @@ $left_side   = get_theme_mod( 'post_author_left_side', false );
 			</header><!-- .entry-header -->
 			<div class="entry-content">
 				<?php 
-				get_site_title();
+				get_page_header();
 				?>
 				<h2 class="post-title">
 					<a href="<?php echo esc_url( get_the_permalink() ); ?>"><?php echo wp_trim_words( get_the_title(), 9 ); ?></a>
 				</h2>
+				<hr/>
 
 
 				<?php if ( $post_author && $left_side ): ?>

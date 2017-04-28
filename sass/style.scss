@@ -19,8 +19,10 @@
  $background-color: ghostwhite;
  $nav-bar-color: #f0f0f0;
  $hero-image-text-color: white;
+ $social-icon-color: $secondary-info-color;
+ $social-icon-hover-color: #1f1f1f;
  $band-name-home-font-size: 10rem;
- $band-name-page-top-font-size: 6rem;
+ $band-name-page-top-font-size: 8rem;
 
 
 /* Band logo font */
@@ -57,19 +59,55 @@ html {
  		}
  	}
 
-	// Band name on top of each page
-	.page-title.site-title {
-		font-size: $band-name-page-top-font-size;
-		text-align: center;
-		// margin-bottom: 300px;
+ 	.entry-content {
+		// Band name on top of each page
+		.page-top.site-title {
+			font-size: $band-name-page-top-font-size;
+			text-align: center;
+			margin-bottom: 110px;
+		}
+
+		// Social icons on top of each page
+		nav#social  {
+			// Get rid of line underneath social icons
+			border-bottom-width: 0px; 
+
+			// Center
+			float: none;
+
+			a {
+				color: $social-icon-color;
+			}
+
+			a:hover {
+				color: $social-icon-hover-color;
+			}
+
+		}
+
+		// Page title 
+		.post-title a {
+			text-transform: uppercase;
+			font-size: 3.5rem;
+		}
 	}
 
- 	p, .menu, h2, .entry-date {
- 		font-family: $header-font-stack;
- 	}
+	.post-content .entry-content .post-title {
+		margin-top: 20px;
+		h2 {
+			a {
+				
+			}
+			
+		}
+	}
+
+	p, .menu, h2, .entry-date {
+		font-family: $header-font-stack;
+	}
 
 	// Normal text 
-	p, .post-content .entry-content p{
+	p, .post-content .entry-content p {
 		color: $body-copy-color;
 	}
 
@@ -150,7 +188,14 @@ html {
 		color: $secondary-info-color;
 	}
 
-
+	hr {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid #ccc;
+		margin: 1em 0;
+		padding: 0;
+	}
 
 }
 
