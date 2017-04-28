@@ -16,7 +16,7 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 
 // No admin bar on top
-show_admin_bar( true );
+show_admin_bar( false );
 
 function get_page_header() {
 	$sitename = get_bloginfo( 'name' );
