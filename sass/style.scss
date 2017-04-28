@@ -53,6 +53,12 @@ html {
  		}
  	}
 
+	// Band name on top of each page
+	.page-title.site-title {
+		font-size: 6rem;
+		text-align: center;
+	}
+
  	p, .menu, h2, .entry-date {
  		font-family: $header-font-stack;
  	}

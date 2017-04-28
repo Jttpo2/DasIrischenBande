@@ -14,8 +14,19 @@ function my_theme_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 // No admin bar on top
-show_admin_bar( false );
+show_admin_bar( true );
+?>
 
+<?php
+function get_site_title() {
+	$sitename = get_bloginfo( 'name' );
+	?>
+	<h1 class="page-title site-title"><?php echo $sitename; ?></h1>
+	<?php
+}
+?>
+
+<?php
 /**
 * Removed author tag from posts
 * Prints HTML with meta information for the current post-date/time and author.
