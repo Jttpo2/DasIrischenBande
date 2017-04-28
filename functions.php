@@ -18,10 +18,16 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 // No admin bar on top
 show_admin_bar( false );
 
+// Returns the band name header for individual pages
 function get_page_header() {
 	$sitename = get_bloginfo( 'name' );
 	?>
-	<h1 class="page-top site-title"><?php echo $sitename; ?></h1>
+	<h1 class="page-top site-title">
+	<!-- <a href= -->
+	<!-- <?php get_site_url('/') ?>> -->
+	<?php echo $sitename; ?>
+	<!-- </a> -->
+	</h1>
 	<?php shapely_social_icons();
 }
 
