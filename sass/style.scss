@@ -107,7 +107,7 @@
 		}
 	}
 
-	p, .menu, h2, .entry-date {
+	p, .menu, h1, h2, h3, h4, h5, h6, h7.entry-date {
 		font-family: $header-font-stack;
 	}
 
@@ -219,11 +219,17 @@
 		filter: grayscale(100%);
 	}
 
-	// Related posts section
+	// Next/previous posts section
 	.shapely-next-prev {
+		display: none;
 		a {
 			font-family: $header-font-stack;
 		}
+	}
+
+	// Comments section - removed
+	#comments {
+		display: none;
 	}
 
 	// Contact form
