@@ -203,12 +203,14 @@
 		color: $secondary-info-color;
 	}
 
+	// Post header horizontal rule
 	hr {
 		display: block;
 		height: 1px;
 		border: 0;
 		border-top: 1px solid #ccc;
-		margin: 1em 0;
+		margin-top: 1em;
+		margin-bottom: 6em;
 		padding: 0;
 	}
 
@@ -288,7 +290,8 @@
 	// Hide site-title when on home page on small screens
 	body.home {
 		.site-title-container {
-		// display: none;
-		visibility: hidden;
+			// display: none;
+			visibility: hidden;
+		}
 	}
 }
