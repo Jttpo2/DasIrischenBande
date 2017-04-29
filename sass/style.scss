@@ -284,4 +284,11 @@
 			display: none;
 		}			
 	}
+
+	// Hide site-title when on home page on small screens
+	body.home {
+		.site-title-container {
+		// display: none;
+		visibility: hidden;
+	}
 }
