@@ -107,6 +107,7 @@
 		}
 	}
 
+	// Same font everywhere
 	p, .menu, h1, h2, h3, h4, h5, h6, h7.entry-date {
 		font-family: $header-font-stack;
 	}
@@ -128,7 +129,9 @@
 		background-color: $nav-bar-color;
 
 		.site-title-container {
-			display: none;
+			// text-align: center;
+			// display: none;
+			// visibility: hidden;
 		}
 
 		.module-group {
@@ -155,7 +158,8 @@
 	// Nav bar when scrolled down the page
 	.main-navigation.scrolled {
 		.module.left.site-title-container {
-			display: inline-block;
+			// display: inline-block;
+			visibility: visible;
 		}
 	}
 
@@ -258,9 +262,26 @@
 	}
 }
 
+@media (min-width: 992px) {
+	// Remove site title in menu on non-mobile screens (without hamburger menus)
+	.site-title-container {
+		// display: none;
+		visibility: hidden;
+	}
+}
+
 @media all and (max-width: 767px) {
 	// Hack-size main page posts
 	.post.hentry {
 		width: 100%;
+	}
+}
+
+@media all and (max-width: 992px) {
+	.entry-content {
+		// Hide band name on top of each page on mobile screens
+		.page-top.site-title {
+			display: none;
+		}			
 	}
 }
