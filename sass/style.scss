@@ -112,6 +112,12 @@
 		font-family: $header-font-stack;
 	}
 
+	.top-parallax-section {
+		a .btn-lg {
+			font-family: $header-font-stack !important;
+		}
+	}
+
 	// Normal text 
 	p, .post-content .entry-content p {
 		color: $body-copy-color;
