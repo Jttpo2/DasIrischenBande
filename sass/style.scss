@@ -222,8 +222,8 @@
 
 		// Get text in post feed away from the sides
  		.entry-content {
- 			padding-left: 15px;
- 			padding-right: 15px;
+ 			padding-left: 30px;
+ 			padding-right: 30px;
  		}
 
  		.entry-header {
@@ -231,6 +231,14 @@
 				// Hide category 
 				display: none;
 			}
+		}
+	}
+
+	// Posts on home page need less padding to look the same
+	.hentry {
+		.post-content {
+			padding-left: 0px;
+ 			padding-right: 0px;
 		}
 	}
 
