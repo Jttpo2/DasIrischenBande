@@ -79,8 +79,6 @@
 		}
 	}
 
-
-
 	.entry-content {
 		// Band name on top of each page
 		.page-top.site-title {
@@ -222,6 +220,12 @@
  			text-align: center; 
  		}
 
+		// Get text in post feed away from the sides
+ 		.entry-content {
+ 			padding-left: 15px;
+ 			padding-right: 15px;
+ 		}
+
  		.entry-header {
  			.shapely-category {
 				// Hide category 
@@ -230,9 +234,9 @@
 		}
 	}
 
-	// Get text in post feed away from the sides of mobile devices
-	.entry-content {
-
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	/* Center blog posts and other content */
