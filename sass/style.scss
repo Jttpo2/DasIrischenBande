@@ -19,6 +19,7 @@
  $background-color: ghostwhite;
  $nav-bar-color: #f0f0f0;
  $hero-image-text-color: white;
+ $hero-image-text-shadow: slategray;
  $social-icon-color: $secondary-info-color;
  $social-icon-hover-color: #1f1f1f;
  $link-hover-color: #0f0f0f;
@@ -26,10 +27,7 @@
  $tag-line-home-font-size: 3rem;
  $band-name-home-font-size-small-screen: 27vw;
  $tag-line-home-font-size-small-screen: 15vw;
- // $band-name-home-font-size-very-small-handset: 8rem;
- // $band-name-home-font-size-super-small-handset: 7rem;
  $band-name-page-top-font-size: 8rem;
-
 
  /* Band logo font */
  /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
@@ -58,10 +56,13 @@
 			color: $hero-image-text-color;
 			font-family: $header-font-stack;
 			font-size: $band-name-home-font-size;
+
+			text-shadow: 1px 1px 1px $hero-image-text-shadow;
 		}
 
 		p {
 			font-size: $tag-line-home-font-size;
+			text-shadow: 1px 1px 1px $hero-image-text-shadow;
 		}
 	}
 
@@ -77,22 +78,6 @@
 			font-size: $tag-line-home-font-size-small-screen;
 		}
 	}
-	
-	// @media all and (max-width: 340px)  {
-	// 	.image-bg {
-	// 		h1 {
-	// 			font-size: $band-name-home-font-size-very-small-handset;		
-	// 		}
-	// 	}
-	// }
-
-	// @media all and (max-width: 300px)  {
-	// 	.image-bg {
-	// 		h1 {
-	// 			font-size: $band-name-home-font-size-super-small-handset;		
-	// 		}
-	// 	}
-	// }
 
 	.entry-content {
 		// Band name on top of each page
@@ -236,13 +221,13 @@
  		}
 
 		// Get text in post feed away from the sides
- 		.entry-content {
- 			padding-left: 15px;
- 			padding-right: 15px;
- 		}
+		.entry-content {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 
- 		.entry-header {
- 			.shapely-category {
+		.entry-header {
+			.shapely-category {
 				// Hide category 
 				display: none;
 			}
@@ -253,7 +238,7 @@
 	.hentry {
 		.post-content {
 			padding-left: 0px;
- 			padding-right: 0px;
+			padding-right: 0px;
 		}
 	}
 
