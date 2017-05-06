@@ -25,8 +25,8 @@
  $link-hover-color: #0f0f0f;
  $band-name-home-font-size: 10rem;
  $tag-line-home-font-size: 3rem;
- $band-name-home-font-size-small-screen: 27vw;
- $tag-line-home-font-size-small-screen: 15vw;
+ $band-name-home-font-size-small-screen: 23vw;
+ $tag-line-home-font-size-small-screen: 8vw;
  $band-name-page-top-font-size: 8rem;
 
  /* Band logo font */
@@ -72,10 +72,10 @@
 			h1 {
 				font-size: $band-name-home-font-size-small-screen;		
 			}
-		}
 
-		p {
-			font-size: $tag-line-home-font-size-small-screen;
+			p {
+				font-size: $tag-line-home-font-size-small-screen;
+			}
 		}
 	}
 
