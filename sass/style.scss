@@ -23,8 +23,11 @@
  $social-icon-hover-color: #1f1f1f;
  $link-hover-color: #0f0f0f;
  $band-name-home-font-size: 10rem;
- $band-name-home-font-size-small-handset: 9rem;
- $band-name-home-font-size-very-small-handset: 8rem;
+ $tag-line-home-font-size: 3rem;
+ $band-name-home-font-size-small-screen: 27vw;
+ $tag-line-home-font-size-small-screen: 15vw;
+ // $band-name-home-font-size-very-small-handset: 8rem;
+ // $band-name-home-font-size-super-small-handset: 7rem;
  $band-name-page-top-font-size: 8rem;
 
 
@@ -58,26 +61,38 @@
 		}
 
 		p {
-			font-size: 3rem;
+			font-size: $tag-line-home-font-size;
 		}
 	}
 
 	// Fit Hero image text to small screens 1
-	@media all and (max-width: 375px)  {
+	@media all and (max-width: 450px)  {
 		.image-bg {
 			h1 {
-				font-size: $band-name-home-font-size-small-handset;		
+				font-size: $band-name-home-font-size-small-screen;		
 			}
+		}
+
+		p {
+			font-size: $tag-line-home-font-size-small-screen;
 		}
 	}
 	
-	@media all and (max-width: 340px)  {
-		.image-bg {
-			h1 {
-				font-size: $band-name-home-font-size-very-small-handset;		
-			}
-		}
-	}
+	// @media all and (max-width: 340px)  {
+	// 	.image-bg {
+	// 		h1 {
+	// 			font-size: $band-name-home-font-size-very-small-handset;		
+	// 		}
+	// 	}
+	// }
+
+	// @media all and (max-width: 300px)  {
+	// 	.image-bg {
+	// 		h1 {
+	// 			font-size: $band-name-home-font-size-super-small-handset;		
+	// 		}
+	// 	}
+	// }
 
 	.entry-content {
 		// Band name on top of each page
