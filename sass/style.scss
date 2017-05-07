@@ -133,7 +133,7 @@ html {
 		font-family: $header-font-stack;
 	}
 
-	p {
+	p, body {
 		font-size: $bodycopy-font-size;
 	}
 
@@ -328,6 +328,14 @@ html {
 		.grunion-field-label {
 			font-family: $header-font-stack;
 		}
+	}
+
+	input[type="text"], input[type="search"], input[type="email"], input[type="tel"], textarea {
+		// Text color
+		// color: $nav-bar-color;
+
+		background: $nav-bar-color;
+
 	}
 
 	// Mobile (hamburger) menu
