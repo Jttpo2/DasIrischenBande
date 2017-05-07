@@ -19,7 +19,8 @@ $secondary-info-color: #838383;
 $background-color: ghostwhite;
 $nav-bar-color: #f0f0f0;
 $hero-image-text-color: white;
-$hero-image-text-shadow: slategray;
+// $hero-image-text-shadow: slategray;
+$hero-image-text-shadow: #190F00;
 $social-icon-color: $secondary-info-color;
 $social-icon-hover-color: #1f1f1f;
 $link-hover-color: #0f0f0f;
@@ -180,7 +181,7 @@ html {
 			width: 70%;
 			margin: auto;
 			// align: center;
-		
+
 		}
 
 	}
