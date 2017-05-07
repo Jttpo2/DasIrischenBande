@@ -176,19 +176,22 @@ html {
 
 		.module-group.right {
 			float: none;
-			width: 50%;
+
+			width: 70%;
 			margin: auto;
+			// align: center;
+		
 		}
 
 	}
 
-	// #menu {
-	// 	width: 50%;
-	// 	// text-align: center;
-	// 	a {
-	// 		// font-size: 2rem;
-	// 	}
-	// }
+	#menu {
+		// width: 70%;
+		// text-align: center;
+		a {
+			font-size: 1.5rem;
+		}
+	}
 
 	.nav-bar {
 		@media (min-width: 1200px) {
