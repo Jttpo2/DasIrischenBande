@@ -31,6 +31,8 @@ $tag-line-home-font-size-small-screen: 8vw;
 $band-name-page-top-font-size: 8rem;
 $bodycopy-font-size: 2.5rem;
 
+$screen-width-min-limit-desktop: 992px;
+
 /* Band logo font */
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
 @font-face {
@@ -186,15 +188,27 @@ html {
 			width: 70%;
 			margin: auto;
 			// align: center;
-
 		}
-
 	}
 
 	#menu {
-		// width: 70%;
-		// text-align: center;
+		// Center menu
+		max-width: 40vw;
+		width: 90%;
+		margin: auto;
+
+		// Only display along-the-top menu on desktop (when there is no hamburger menu)
+		@media (min-width: $screen-width-min-limit-desktop) {
+			display: flex;
+		}
+		
+		li {
+			// Center menu items
+			margin: auto;
+		}
+
 		a {
+			// Menu items font size
 			font-size: 1.5rem;
 		}
 	}
@@ -204,14 +218,13 @@ html {
 			width: 100%;
 		}
 
-		@media (min-width: 992px) {
+		@media (min-width: $screen-width-min-limit-desktop) {
 			width: 100%;
 		}
 
 		@media (min-width: 768px) {
 			width: 100%;
 		}
-
 	}
 
 	// Nav bar when scrolled down the page
@@ -348,14 +361,14 @@ html {
 @media screen and (min-width: 1200px) {
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $screen-width-min-limit-desktop) {
 	// Hack-size main page posts
 	.post.hentry {
 		width: 64%;
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: $screen-width-min-limit-desktop) {
 	// Remove site title in menu on non-mobile screens (without hamburger menus)
 	.site-title-container {
 		// display: none;
@@ -370,7 +383,7 @@ html {
 	}
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: $screen-width-min-limit-desktop) {
 	.entry-content {
 		// Hide band name on top of each page on mobile screens
 		.page-top.site-title {
