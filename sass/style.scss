@@ -23,6 +23,8 @@ $hero-image-text-color: white;
 $hero-image-text-shadow: #190F00;
 $social-icon-color: $secondary-info-color;
 $social-icon-hover-color: #1f1f1f;
+
+$top-menu-item-font-size: 1.5rem;
 $link-hover-color: #0f0f0f;
 $band-name-home-font-size: 10rem;
 $tag-line-home-font-size: 3rem;
@@ -32,6 +34,7 @@ $band-name-page-top-font-size: 8rem;
 $bodycopy-font-size: 2.5rem;
 
 $screen-width-min-limit-desktop: 992px;
+$screen-width-max-small-handheld: 767px;
 
 /* Band logo font */
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
@@ -209,7 +212,7 @@ html {
 
 		a {
 			// Menu items font size
-			font-size: 1.5rem;
+			font-size: $top-menu-item-font-size;
 		}
 	}
 
@@ -376,7 +379,7 @@ html {
 	}
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: $screen-width-max-small-handheld) {
 	// Hack-size main page posts
 	.post.hentry {
 		width: 100%;
